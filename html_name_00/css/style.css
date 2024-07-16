@@ -1,0 +1,499 @@
+/* ここから下に記載していく */
+
+/* top */
+.inline-block {
+    display: inline-block;      /* インラインブロック要素にする */
+    background-color:  white;    /* 背景色指定 */
+    padding:  50px;             /* 余白指定 */
+    height: 40px;              /* 高さ指定 */
+    float: right; /* 左寄せ */
+    font-size:21px
+}
+a {
+    text-decoration: none;
+  }
+
+.main img{
+    width: 100%;
+}
+
+
+/* 最初の画像 */
+.main{
+    position: relative;/*親要素にrelative*/
+  }
+  .sekai {
+    position: absolute;/*重ねたい子要素にabsolute*/
+    top:45%;
+    left: 50%;
+   -ms-transform: translate(-50%,-50%);/*ベンダープレフィックス*/
+    -webkit-transform: translate(-50%,-50%);/*ベンダープレフィックス*/
+    transform: translate(-50%,-50%);/*センター寄せの修正*/
+    color: #fff;
+    font-size: 2rem;
+    margin: 0!important;/*文字がずれている場合や*/
+    padding: 0!important;/*文字が折り返される場合*/
+  }
+  .cheese {
+    position: absolute;/*重ねたい子要素にabsolute*/
+    top:55%;
+    left: 50%;
+   -ms-transform: translate(-50%,-50%);/*ベンダープレフィックス*/
+    -webkit-transform: translate(-50%,-50%);/*ベンダープレフィックス*/
+    transform: translate(-50%,-50%);/*センター寄せの修正*/
+    color: #fff;
+    font-size: 1.8rem;
+    top: calc(50% + 30px);
+    padding: 0!important;/*文字が折り返される場合*/
+    font-weight: normal; 
+  }
+
+  /* aboutのところ */
+
+.about{
+    body {
+        margin: 0;
+        padding: 20px;
+        margin: 60px 0 0;
+    }
+}
+.about_big {
+    font-size: 24px; /* ABOUTの文字の大きさを24pxに */
+    margin-bottom: 30px; /* ABOUTとチーズアカデミーについての間は30px */
+    margin: 60px;
+    color: yellow;
+    text-align: center;
+}
+
+.intro {
+    font-size: 18px; /* チーズアカデミーについての文字の大きさを18pxに */
+    margin-bottom: 60px; /* チーズアカデミーについてと次のパラグラフの間は60px */
+    font-weight: normal; 
+    text-align: center;
+}
+
+.about1 {
+    font-size: 16px; /* 指定していない文字の大きさは16pxに */
+    margin-bottom: 40px; /* 指定していない箇所の余白は40pxに */
+    font-weight: normal;
+    text-align: center;
+}
+.about2 {
+    font-size: 16px; /* 指定していない文字の大きさは16pxに */
+    margin-bottom: 40px; /* 指定していない箇所の余白は40pxに */
+    font-weight: normal;
+    line-height: 30px;
+    text-align: center;
+}
+.about3 {
+    font-size: 16px; /* 指定していない文字の大きさは16pxに */
+    margin-bottom: 40px; /* 指定していない箇所の余白は40pxに */
+    font-weight: normal;
+    text-align: center;
+}
+
+.about4 {
+    font-size: 16px; /* 指定していない文字の大きさは16pxに */
+    margin-bottom: 40px; /* 指定していない箇所の余白は40pxに */
+    font-weight: normal;
+    margin-bottom: 80px;
+    line-height: 30px;
+    text-align: center;
+}
+
+/* 画像並んでいるやつ */
+
+.side{
+	display: flex;
+	flex-wrap:wrap;
+}
+.side li {
+	width: calc(100%/4);/*←画像を横に4つ並べる場合*/
+	padding: 0px;/*←画像の左右に5pxの余白を入れる場合*/
+	box-sizing: border-box;
+}
+.side li img {
+	max-width:100%; /*画像のはみだしを防ぐ*/
+	height: auto; /*画像の縦横比を維持 */
+}
+
+.course {
+        /* 水平方向の中央揃え */
+        text-align: center;
+        margin : 60px ;
+}
+.course_big{
+    font-size: 24px; /* ABOUTの文字の大きさを24pxに */
+    margin-bottom: 30px; /* ABOUTとチーズアカデミーについての間は30px */
+    color: black;
+}
+.course1{
+    font-size: 16px; /* 指定していない文字の大きさは16pxに */
+    margin-bottom: 60px; /* 指定していない箇所の余白は40pxに */
+    font-weight: normal;
+    line-height: 30px;
+}
+
+.course_01 {
+    display: flex; /*横並び*/
+    background-color:#fafafab7;
+  }
+  .course_01 .image {
+    flex-basis:50%; /*画像サイズ指定*/
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+  }
+  .course_01 .right {
+    flex-basis:50%;
+    margin-bottom: 120px;
+    margin-left: 50px;
+    padding: 0;
+    background-color:#fafafab7;
+  }
+  .title_right{
+    margin: 0;
+    padding: 0;
+    margin-top: 120px;
+    font-weight: bold;
+    font-size: 18px;
+    max-width:430px;
+    background-color:#fafafab7;
+  }
+  .text_right {
+    margin-top: 40px;
+    padding: 0;
+    max-width:430px;
+    line-height: 30px;
+    background-color:#fafafab7;
+ }
+
+
+ .left {
+    display: flex;
+    background-color:#fafafab7;
+ }
+ .left1{
+    flex-basis:50%;
+    margin: 120;
+    padding: 120;
+    overflow: hidden;
+    position: relative;
+    background-color:#fafafab7;
+  }
+  .title_left {
+    margin: 0;
+    padding: 0;
+    margin-top: 120px;
+    font-weight: bold;
+    font-size: 18px;
+    max-width:430px;
+    text-align: right; /* テキストを右寄せ */
+    background-color:#fafafab7;
+  }
+  .text_left {
+    margin-top: 40px;
+    padding: 0;
+    max-width:450px;
+    line-height: 30px;
+    margin-left: 190px;
+    background-color:#fafafab7;
+ }
+ .course_02 {
+    display: flex; /*横並び*/
+    flex-direction: row-reverse;
+    background-color:#fafafab7;
+  }
+  .course_02 .image {
+    flex-basis:50%; /*画像サイズ指定*/
+    margin-left: 50px;
+    padding: 0;
+  }
+
+
+
+.news11 {
+    /* 水平方向の中央揃え */
+    text-align: center;
+    margin : 60px ;
+}
+.news_big{
+font-size: 24px; /* ABOUTの文字の大きさを24pxに */
+margin-bottom: 30px; /* ABOUTとチーズアカデミーについての間は30px */
+color: yellow;
+}
+.news1{
+font-size: 16px; /* 指定していない文字の大きさは16pxに */
+margin-bottom: 60px; /* 指定していない箇所の余白は40pxに */
+font-weight: normal;
+line-height: 30px;
+}
+
+
+.news {
+    text-align: center;
+    margin: 60px;
+}
+    .pizza {
+    display: flex; /*横並び*/
+    justify-content: center;
+    width: 300px; 
+    padding-top: 5px;
+    margin-right: auto; /* ▽ 中央寄せ ▽ */
+    margin-left: auto;/* △ 中央寄せ △ */
+    margin-bottom: 60px;
+    }
+    .pizzalist {
+    list-style-type: none; /* リストマーカーを消す */
+    display: block; /* リストをブロックレベルで表示させる */
+    width: 300px;
+    height: 300px;
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-bottom: 60px;
+    }
+    .pizzaimg { /* <li>タグの中の<img>のプロパティはここで。 */
+    margin: 5px;
+    width: 145px;
+    height: 150px;
+    }
+    .pizzatext {
+    margin: 5px; /* 画像の下の文章のレイアウトはここで。 */
+    line-height: 30px;
+    margin-top: 30px;
+    margin-bottom: 24px;
+    }
+
+/* /MOREのボタン */
+.more{
+    text-align: center;
+    margin-bottom: 60px;
+}
+.button-more {
+margin-right: auto; /* ▽ 中央寄せ ▽ */
+margin-left: auto;/* △ 中央寄せ △ */
+ width: 300px; /* 幅 */
+ height: 60px; /* 高さ */
+ background-color: yellow; /* 背景色 */
+        color: black; /* 文字色 */
+        font-size: 18px; /* フォントサイズ */
+        text-align: center; /* テキストを中央揃え */
+        line-height: 60px; /* ボタンの高さと一致させてテキストを中央揃え */
+        border: none; /* 枠線を消す */
+        border-radius: 5px; /* 角を丸くする */
+        cursor: pointer; /* カーソルをポインターに */
+        transition: background-color 0.3s, transform 0.3s; /* ホバー時のアニメーション */
+}
+    
+    .button-more:hover {
+        background-color: #f0e68c; /* ホバー時の背景色 */
+        transform: scale(1.05); /* ホバー時の拡大アニメーション */
+    }
+
+    .Access {
+        /* 水平方向の中央揃え */
+        text-align: center;
+        margin : 60px ;
+        background-color:#fafafab7;
+    }
+    .Access_big{
+    font-size: 24px; /* ABOUTの文字の大きさを24pxに */
+    margin-bottom: 30px; /* ABOUTとチーズアカデミーについての間は30px */
+    color: block;
+    background-color:#fafafab7;
+    }
+    .Access1{
+    font-size: 16px; /* 指定していない文字の大きさは16pxに */
+    margin-bottom: 60px; /* 指定していない箇所の余白は40pxに */
+    font-weight: normal;
+    line-height: 30px;
+    background-color:#fafafab7;
+    }
+
+.mapgd{
+    background-color:#fafafab7;
+}
+.map_table {
+    display: flex; /* Flexboxを使用 */
+    justify-content: center; /* 水平方向に中央揃え */
+    align-items: center; /* 垂直方向に中央揃え */
+    text-align: left;
+    margin: 60px;
+    border-collapse: separate; /* 列の間に余白を追加するため */
+    border-spacing: 10px; /* 列の間の余白を設定 */
+    background-color:#fafafab7;
+  }
+.map_table .td{
+    padding: 3px 10px; /* 上下3pxで左右10px */
+    height: 50px; /* 行の高さを50pxに設定 */
+    text-align: right; /* 文字を右揃え */
+    vertical-align: middle; /* セル内でテキストを中央に垂直配置 */
+    background-color:#fafafab7;
+}
+.map {
+    margin: 60px;
+  }
+  
+  .map iframe {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+}
+
+.contact {
+    /* 水平方向の中央揃え */
+    text-align: center;
+    margin : 60px ;
+}
+.contact_big{
+font-size: 24px; /* ABOUTの文字の大きさを24pxに */
+margin-bottom: 30px; /* ABOUTとチーズアカデミーについての間は30px */
+color: block;
+}
+.contact1{
+font-size: 16px; /* 指定していない文字の大きさは16pxに */
+margin-bottom: 60px; /* 指定していない箇所の余白は40pxに */
+font-weight: normal;
+line-height: 30px;
+}
+
+/* フォーム */
+/* フォーム全体をラップする親要素 */
+.form-container {
+    width: 640px; /* 固定幅を設定 */
+    margin: 0 auto; /* 中央揃え */
+    padding: 20px 0; /* 上下の余白のみ */
+    border-top: 1px solid #ccc; /* 上の横線 */
+    box-sizing: border-box; /* パディングとボーダーを幅に含める */
+}
+
+/* 各フォーム項目を横並びに */
+.form-group {
+    display: flex; /* フォーム項目を横並びに */
+    align-items: center; /* 縦の中央揃え */
+    margin-bottom: 24px; /* 項目間の余白 */
+    padding-bottom: 24px; /* 項目の下に余白 */
+    border-bottom: 1px solid #ccc; /* 項目の下の線 */
+}
+
+/* 名前の項目の上に線を追加し、8pxのスペースを確保 */
+
+.form-group name-group{
+    margin-top: 8px;
+}
+
+/* ラベルと入力欄を別々のコンテナに分ける */
+.label-container,
+.input-container {
+    display: flex;
+    align-items: center;
+    margin-left: 16px;
+    line-height: 30px;
+}
+
+.label-container {
+    flex: 1; /* ラベルを左寄せ */
+}
+
+.input-container {
+    flex: 3; /* 入力欄を右寄せ */
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/* 縦線 */
+.input-container::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 1px;
+    background-color: #ccc; /* 縦線の色 */
+}
+
+/* テキスト入力欄 */
+.input-field,
+.select-field {
+    flex: 1; /* 残りのスペースを占める */
+    height: 36px; /* 項目の高さ */
+    margin-left: 16px; /* 左からの余白 */
+    border: 1px solid #ccc; /* 枠線 */
+    border-radius: 4px; /* 角を丸くする */
+    padding: 0 8px; /* 内側の余白 */
+    box-sizing: border-box; /* パディングとボーダーを幅に含める */
+    color: black;
+}
+
+.select-field {
+    height: 36px; /* セレクトボックスの高さ */
+    padding: 24px; /* 下のセレクトボックスとの間隔 */
+}
+
+/* 詳細項目の入力フィールドを高さ3倍にする */
+.input-field.detail {
+    height: 108px; /* 名前の項目の3倍の高さ */
+}
+
+/* チェックボックスグループのスタイル */
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* 左揃え */
+    margin-left: 16px; /* 左からの余白 */
+}
+
+
+
+
+
+
+
+
+.submit{
+    text-align: center;
+    margin-bottom: 140px;
+    margin-top: 30px;
+}
+.button-submit {
+    margin-right: auto; /* ▽ 中央寄せ ▽ */
+    margin-left: auto;/* △ 中央寄せ △ */
+     width: 300px; /* 幅 */
+     height: 60px; /* 高さ */
+     background-color: yellow; /* 背景色 */
+            color: black; /* 文字色 */
+            font-size: 18px; /* フォントサイズ */
+            text-align: center; /* テキストを中央揃え */
+            line-height: 60px; /* ボタンの高さと一致させてテキストを中央揃え */
+            border: none; /* 枠線を消す */
+            border-radius: 5px; /* 角を丸くする */
+            cursor: pointer; /* カーソルをポインターに */
+            transition: background-color 0.3s, transform 0.3s; /* ホバー時のアニメーション */
+    }
+.button-submit:hover {
+    background-color: #f0e68c; /* ホバー時の背景色 */
+    transform: scale(1.05); /* ホバー時の拡大アニメーション */
+}
+
+
+    /* フッター */
+/* フッター全体のスタイル */
+.footer {
+    background-color: #707070; /* フッターの背景色 */
+    height: 60px; /* フッターの高さ */
+    color: white; /* テキストの色 */
+    display: flex; /* フレックスボックスを使用して中央配置 */
+    align-items: center; /* 縦方向に中央揃え */
+    justify-content: center; /* 横方向に中央揃え */
+    padding: 0 20px; /* 左右にパディングを追加（必要に応じて調整） */
+    box-sizing: border-box; /* パディングとボーダーを含める */
+}
+
+/* フッター内のテキストのスタイル */
+.fp {
+    margin: 0; /* テキストの上下のマージンをリセット */
+    font-size: 14px; /* テキストのフォントサイズ */
+    text-align: center; /* テキストを中央揃え */
+}
